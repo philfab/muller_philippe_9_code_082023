@@ -1,9 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nina Carducci - Photographe Professionnelle</title>
+
+    <meta property="og:title" content="Nina Carducci - Photographe à Bordeaux">
+    <meta property="og:description" content="Photographie professionnelle à Bordeaux par Nina Carducci.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://philfab.github.io/muller_philippe_9_code_082023/">
+    <meta property="og:image" content="https://github.com/philfab/muller_philippe_9_code_082023/blob/main/assets/images/summary.webp">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@nina_carducci_photo">
+    <meta name="twitter:title" content="Nina Carducci - Photographe à Bordeaux">
+    <meta name="twitter:description" content="Photographie professionnelle à Bordeaux par Nina Carducci.">
+    <meta name="twitter:image" content="https://github.com/philfab/muller_philippe_9_code_082023/blob/main/assets/images/summary.webp">
+
+    <title>Nina Carducci - Photographe Professionnelle à Bordeaux</title>
     <meta
       name="description"
       content="Nina Carducci, photographe pro. Explorez son portfolio, découvrez ses services et contactez-la pour un devis."
@@ -213,8 +226,8 @@
             <h3>Shooting photo</h3>
             <p>
               Pour capturer vos moments les plus précieux et garder un souvenir
-              impérissable. Je me déplace en Île-de-France pour réaliser vos
-              photos
+              impérissable. Depuis la Région Bordelaise, je me déplace en
+              Île-de-France pour réaliser vos photos
             </p>
           </div>
           <div class="service__price">
@@ -264,25 +277,6 @@
     </div>
     <section id="contact">
       <div class="container">
-        <!-- Microdata pour la localisation de la photographe -->
-
-        <!-- <div itemscope itemtype="https://schema.org/LocalBusiness">
-          <span itemprop="name"
-            >Nina Carducci - Photographe Professionnelle</span
-          >
-          <div
-            itemprop="address"
-            itemscope
-            itemtype="https://schema.org/PostalAddress"
-          >
-            <span itemprop="streetAddress">68 avenue Alsace-Lorraine</span>,
-            <span itemprop="addressLocality">Bordeaux</span>,
-            <span itemprop="postalCode">33200</span>
-          </div>
-          <span itemprop="telephone">05 56 67 78 89</span>
-          <meta itemprop="openingHours" content="Mo-Fr 10:00-19:00" />
-        </div> -->
-
         <div class="form-container">
           <h3>Une question ? Une demande de devis ?</h3>
           <p>
@@ -308,5 +302,42 @@
         </div>
       </div>
     </section>
+
+    <footer class="footer">
+      
+      <!-- Microdata pour la localisation de la photographe -->
+      <section
+        class="footer-content"
+        itemscope
+        itemtype="http://schema.org/LocalBusiness"
+      >
+        <strong itemprop="name" class="footer-name">Nina Carducci</strong>
+        <p class="footer-description">Photographe à <strong>Bordeaux</strong></p>
+        <address
+          class="footer-address"
+          itemprop="address"
+          itemscope
+          itemtype="http://schema.org/PostalAddress"
+        >
+          <span itemprop="streetAddress">68 avenue Alsace-Lorraine</span>,
+          <span itemprop="postalCode">33200</span>
+          <strong <span itemprop="addressLocality">Bordeaux</span></strong>,
+          <span itemprop="addressCountry">France</span>
+        </address>
+        <span class="footer-phone" itemprop="telephone"
+          >Tél : 05 56 67 78 89 <br />
+          Disponible :
+          <time datetime="Mo-Fr 10:00-19:00"
+            >Lundi-Vendredi de 10h à 19h</time
+          ></span
+        >
+        <a
+          href="mailto:nina.carducci@exemple.fr"
+          class="footer-email"
+          itemprop="email"
+          >nina.carducci@exemple.fr</a
+        >
+      </section>
+    </footer>
   </body>
 </html>
