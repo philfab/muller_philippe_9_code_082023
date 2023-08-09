@@ -260,7 +260,7 @@ input[type="submit"] {
 .footer {
   background-color: #000;
   padding: 20px 0;
-  color: #FFF;
+  color: #fff;
 }
 
 .footer-content {
@@ -279,13 +279,15 @@ input[type="submit"] {
   margin-bottom: 10px;
 }
 
-.footer-address, .footer-phone, .footer-email {
+.footer-address,
+.footer-phone,
+.footer-email {
   display: block;
   margin-bottom: 8px;
 }
 
 .footer-email {
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -409,9 +411,9 @@ input[type="submit"] {
 
   .footer-content {
     padding: 0 10px;
-}
+  }
 
-.footer-name {
+  .footer-name {
     font-size: 20px;
-}
+  }
 }
