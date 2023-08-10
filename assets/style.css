@@ -297,6 +297,10 @@ input[type="submit"] {
   color: #bbb;
 }
 
+.footer-logo {
+  display: none;
+}
+
 @media all and (max-width: 1180px) {
   .picture {
     flex: 2;
