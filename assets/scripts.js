@@ -53,6 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
     img.width = imgWidth;
     img.height = imgHeight;
     img.className = imgClass.trim() ? imgClass : "";
+    img.loading = "lazy";
 
     picture.appendChild(img);
   });
