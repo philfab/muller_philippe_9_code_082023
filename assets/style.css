@@ -67,9 +67,11 @@ body {
   z-index: 0;
 }
 
-.picture img {
+picture img {
   width: 100%;
+  height: auto;
 }
+
 #about-me {
   flex: 2;
 }
@@ -106,7 +108,7 @@ body {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #5E5826;
+  background-color: #5e5826;
   border-radius: 0;
 }
 
@@ -158,11 +160,6 @@ body {
   font-style: italic;
   font-weight: 300;
   font-size: calc(1.375rem + 1.5vw);
-}
-
-.price {
-  font-size: 1.5rem;
-  margin-bottom: 0;
 }
 
 .quote__author {

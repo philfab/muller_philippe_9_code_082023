@@ -15,7 +15,7 @@
       content="Photographie professionnelle à Bordeaux par Nina Carducci."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="./assets/images/nina.webp" />
+    <meta property="og:image" content="./assets/images/nina.jpg" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@nina_carducci_photo" />
@@ -27,7 +27,7 @@
       name="twitter:description"
       content="Photographie professionnelle à Bordeaux par Nina Carducci."
     />
-    <meta name="twitter:image" content="./assets/images/nina.webp" />
+    <meta name="twitter:image" content="./assets/images/nina.jpg" />
 
     <title>Nina Carducci - Photographe Professionnelle à Bordeaux</title>
     <meta
@@ -42,7 +42,6 @@
       href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
       rel="stylesheet"
     />
-
     <script src="./assets/bootstrap/bootstrap.bundle.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -66,8 +65,17 @@
               class="social-link"
               href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
               target="_blank"
-              ><img src="assets/images/instagram.png" alt="logo instagram"
-            /></a>
+            >
+              <picture>
+                <source srcset="./assets/images/instagram.png" />
+                <img
+                  src="./assets/images/instagram.png"
+                  alt="logo instagram"
+                  width="20"
+                  height="20"
+                />
+              </picture>
+            </a>
           </li>
         </ul>
       </nav>
@@ -102,25 +110,31 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img
-              src="./assets/images/slider/ryoji-iwata-man-crossing-street.webp"
-              class="d-block w-100"
-              alt="Man crossing the street from Ryoji Iwata"
-            />
+            <picture
+              class="adaptive-picture"
+              data-srcset="./assets/images/slider/ryoji-iwata-man-crossing-street-{device}.webp"
+              data-sizes="1920,500,325"
+              data-img="d-block w-100,./assets/images/slider/ryoji-iwata.jpg,Man crossing the street from Ryoji Iwata,1920,888"
+            >
+            </picture>
           </div>
           <div class="carousel-item">
-            <img
-              src="./assets/images/slider/nicholas-green-jubilant-fans.webp"
-              class="d-block w-100"
-              alt="Jubilant fans from Nicholas Green"
-            />
+            <picture
+              class="adaptive-picture"
+              data-srcset="./assets/images/slider/nicholas-green-jubilant-fans-{device}.webp"
+              data-sizes="1920,500,325"
+              data-img="d-block w-100,./assets/images/slider/nicholas-green.jpg,Jubilant fans from Nicholas Green,1920,888"
+            >
+            </picture>
           </div>
           <div class="carousel-item">
-            <img
-              src="./assets/images/slider/edward-cisneros-wedding-dance.webp"
-              class="d-block w-100"
-              alt="Wedding dance from Edward Cisneros"
-            />
+            <picture
+              class="adaptive-picture"
+              data-srcset="./assets/images/slider/edward-cisneros-wedding-dance-{device}.webp"
+              data-sizes="1920,500,325"
+              data-img="d-block w-100,./assets/images/slider/edward-cisneros.jpg,Wedding dance from Edward Cisneros,1920,887"
+            >
+            </picture>
           </div>
         </div>
         <button
@@ -145,10 +159,13 @@
     </section>
     <section id="about">
       <div class="picture left">
-        <img
-          src="./assets/images/nina.webp"
-          alt="Nina Carducci"
-        />
+        <picture
+          class="adaptive-picture"
+          data-srcset="./assets/images/nina-{device}.webp"
+          data-sizes="560,480,320"
+          data-img=",.assets/images/nina.jpg,Nina Carducci,560,558"
+        >
+        </picture>
       </div>
       <div id="about-me">
         <h2 class="about-me__title">A propos de moi</h2>
@@ -256,7 +273,7 @@
             </p>
           </div>
           <div class="service__price">
-            <p class="price">350€/demi journée</p>
+            <h4>350€/demi journée</h4>
             <span>Matériel, déplacement inclus</span>
           </div>
         </div>
@@ -269,7 +286,7 @@
             </p>
           </div>
           <div class="service__price">
-            <p class="price">50€/photo</p>
+            <h4>50€/photo</h4>
             <span>2 AR par photo</span>
           </div>
         </div>
@@ -282,7 +299,7 @@
             </p>
           </div>
           <div class="service__price">
-            <p class="price">400€ album A4</p>
+            <h4>400€ album A4</h4>
             <span>30 pages recto/verso</span>
           </div>
         </div>
@@ -324,7 +341,13 @@
           </form>
         </div>
         <div class="picture right">
-          <img src="./assets/images/camera.webp" alt="camera" />
+          <picture
+            class="adaptive-picture"
+            data-srcset="./assets/images/camera-{device}.webp"
+            data-sizes="418,320,200"
+            data-img=",.assets/images/camera.jpg,camera,418,417"
+          >
+          </picture>
         </div>
       </div>
     </section>
@@ -337,9 +360,7 @@
         itemtype="http://schema.org/LocalBusiness"
       >
         <strong itemprop="name" class="footer-name">Nina Carducci</strong>
-        <p class="footer-description">
-          Photographe à <strong>Bordeaux</strong>
-        </p>
+        <p class="footer-description">Photographe à Bordeaux</p>
         <address
           class="footer-address"
           itemprop="address"
@@ -348,8 +369,7 @@
         >
           <span itemprop="streetAddress">68 avenue Alsace-Lorraine</span>,
           <span itemprop="postalCode">33200</span>
-          <strong><span itemprop="addressLocality">Bordeaux</span></strong
-          >,
+          <span itemprop="addressLocality">Bordeaux</span>,
           <span itemprop="addressCountry">France</span>
         </address>
         <span class="footer-phone" itemprop="telephone"
@@ -359,8 +379,9 @@
           ></span
         >
         <span itemprop="priceRange">Tarifs : de 50€ à 400€</span>
-        <img class="footer-logo"
-          src="./assets/images/nina.webp"
+        <img
+          class="footer-logo"
+          src="./assets/images/nina.jpg"
           alt="Nina Carducci"
           itemprop="image"
         />
