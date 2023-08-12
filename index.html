@@ -34,22 +34,20 @@
       name="description"
       content="Nina Carducci, photographe pro. Explorez son portfolio, découvrez ses services et contactez-la pour un devis."
     />
-    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="./assets/style.min.css" />
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" media="print" id="asyncCSS" onload="this.media='all'"/>
+    <link rel="stylesheet" href="./assets/style.min.css" media="print" id="asyncCSS" onload="this.media='all'"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
-      rel="stylesheet"
-    />
-    <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <link rel="preload" fetchpriority="low" as="image" href="./assets/images/slider/ryoji-iwata-man-crossing-street-tablet.webp" type="image/webp">
     <script
+      defer
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
-    <script src="./assets/maugallery.min.js"></script>
-    <script src="./assets/scripts.min.js"></script>
+    <script defer src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script defer src="./assets/maugallery.min.js"></script>
+    <script defer src="./assets/scripts.min.js"></script>
   </head>
   <body>
     <div class="top-header">
@@ -67,9 +65,9 @@
               target="_blank"
             >
               <picture>
-                <source srcset="./assets/images/instagram.png" />
+                <source srcset="./assets/images/instagram.webp" />
                 <img
-                  src="./assets/images/instagram.png"
+                  src="./assets/images/instagram.webp"
                   alt="logo instagram"
                   width="20"
                   height="20"
@@ -115,7 +113,7 @@
               class="adaptive-picture"
               data-srcset="./assets/images/slider/ryoji-iwata-man-crossing-street-{device}.webp"
               data-sizes="1920,500,325"
-              data-img="d-block w-100,./assets/images/slider/ryoji-iwata.jpg,Man crossing the street from Ryoji Iwata,1920,888,eager"
+              data-img="d-block w-100,./assets/images/slider/ryoji-iwata.jpg,Man crossing the street from Ryoji Iwata,1920,888,auto"
             >
             </picture>
           </div>
@@ -159,14 +157,14 @@
       </div>
     </section>
     <section id="about">
-      <!-- <div class="picture left">
+      <div class="picture left">
         <picture
           class="adaptive-picture"
           data-srcset="./assets/images/nina-{device}.webp"
           data-sizes="560,480,320"
-          data-img=",.assets/images/nina.jpg,Nina Carducci,560,558,lazy"
+          data-img=",.assets/images/nina.webp,Nina Carducci,560,558,lazy"
         >
-        </picture>
+        </picture> 
       </div>
       <div id="about-me">
         <h2 class="about-me__title">A propos de moi</h2>
@@ -185,7 +183,7 @@
           puissiez y puiser de l’amour, du bonheur, de la tendresse et de
           lumière à chaque fois que vous poserez les yeux sur vos photos.
         </p>
-      </div> -->
+      </div>
     </section>
     <section id="gallery">
       <h2 class="title">Portfolio</h2>
@@ -355,7 +353,7 @@
             class="adaptive-picture"
             data-srcset="./assets/images/camera-{device}.webp"
             data-sizes="418,320,200"
-            data-img=",.assets/images/camera.jpg,camera,418,417,lazy"
+            data-img=",.assets/images/camera.webp,camera,418,417,lazy"
           >
           </picture>
         </div>
@@ -391,7 +389,7 @@
         <span itemprop="priceRange">Tarifs : de 50€ à 400€</span>
         <img
           class="footer-logo"
-          src="./assets/images/nina.jpg"
+          src="./assets/images/nina.webp"
           alt="Nina Carducci"
           itemprop="image"
           loading="lazy"

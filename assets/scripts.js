@@ -51,3 +51,13 @@ document.addEventListener("DOMContentLoaded", function() {
         picture.appendChild(img);
     });
 });
+
+
+function loadFont() {
+  var link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.href = 'https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap';
+  document.head.appendChild(link);
+}
+
+window.onload = loadFont;
