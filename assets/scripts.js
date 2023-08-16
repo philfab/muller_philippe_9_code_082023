@@ -14,3 +14,19 @@ $(document).ready(function () {
   });
 });
 
+window.addEventListener("load", function () {
+  setTimeout(() => {
+    const sources = document.querySelectorAll("source[data-srcset]");
+    sources.forEach((source) => {
+      source.setAttribute("srcset", source.getAttribute("data-srcset"));
+    });
+
+    const img = document.querySelector("img[data-src]");
+    img.setAttribute("src", img.getAttribute("data-src"));
+
+    sources.forEach((source) => {
+      source.removeAttribute("data-srcset");
+    });
+    img.removeAttribute("data-src");
+  }, 1000);
+});
